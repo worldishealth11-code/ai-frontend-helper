@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI FRONTEND HELPER</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .card-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow:0 4px 6px rgba(0,0,0,0.1) ;
+            flex: 1;
+            min-width: 250px;
+            border: 1px solid e5e7eb;
+        }
+.btn-1 {
+    display:block;
+    margin: 20px auto;
+    color: black;
+    background-color: palevioletred;
+    border-color: black;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    width: fit-content;
+    font-weight: bold;
+}
+.nav-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 8px;
+    border-radius: 12px;
+    background-color: #1e1403;
+    
+
+}
+.nav-1 a{
+color: palevioletred;
+    font-weight: bold;
+    margin-left: 0px;
+    padding: 12px 12px;
+    border-radius: 6px;
+    text-transform: none;
+    height: 12px 3px;
+
+}
+.btn-2 {
+    color: black;
+    background-color: palevioletred;
+    border-color: black;
+}
+body {
+    background-color: hsl(0, 0%, 84%);
+    margin: 0%;
+    padding: 0%;
+}
+.h-1 {
+    align-items: center;
+    text-align: center;
+
+}
+.p-1 {
+    text-align: center;
+}
+
+    </style>
+
+    </head>
+    <body>
+        <!--component 1: Nav bar-->
+        <nav class="nav-1">
+            <h2></h2>
+                <div class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#tools">tools</a>
+                    <a href="#assistant">assistance</a>
+        </nav>
+        <!--component 2: Main content-->
+        <section id="home">
+            <h1 class="h-1">WElCOME TO AI FRONTEND HELPER</h1>
+            <p class="p-1">Your ultimate tool for frontend development assistance.</p>
+            <button class="btn-1" onclick="goToAssistant()"> Try the assistance</button>
+        </section>
+        <!--component 3: Tools section-->
+        <section class="tools"id="tools">
+            <h2 class="section-title">Explore our AI Tools</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>💻 Code Helper</h3>
+                    <p>Get assistance with writing and debugging frontend code.</p>
+                </div>
+            
+                <div class="card">
+                    <h3>🎨 Design Assistant</h3>
+                    <p>Receive suggestions for improving your UI/UX design.</p>
+                </div>
+
+                <div class="card">
+                    <h3>📚 Documentation Guide</h3>
+                    <p>Access comprehensive documentation for frontend frameworks.</p>
+                </div>
+        </section>
+        <!--component 4: Assistant section-->
+        <section  class="assistant" id="assistant">
+            <h2>AI Assistant</h2>
+            <p>Get instant help with your frontend development queries.</p>
+<form id=""helperForm>
+    <label>Your Name</label>
+    <input type="text" id="userName" placeholder="Enter your name" required>
+    <label>Your question</label>
+    <textarea id="userQuestion" placeholder="Type your question here " reguired></textarea>
+
+    <button class="btn-2" type="submit">Get Response</button>
+</form>
+<div id="result" hidden aria-live="polite"></div>
+        </section>
+        <!--component 5: Footer section-->
+        <footer>
+            <p> 2026 AI FRONTEND HELPER. All rights reserved.</p>
+        </footer>
+        <!--script-->
+        <script src="script.js"></script>
+    </body>
+</html>

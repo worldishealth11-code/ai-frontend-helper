@@ -1,0 +1,146 @@
+/*GENERAL PAGE STYLING*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+/* Component 1: Navbar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+nav h2 {
+    font-size: 24px;
+}
+.nav-links {
+    color:#fff;
+    text-decoration: none;
+    margin-left:18px;
+}
+.nav .links:hover {
+    color: #93c5fd;
+
+}
+/* component 2: Hero Section */
+.hero {
+    background:linear-gradient(135deg, #123c69 , #2563eb);
+}
+.hero h1 {
+
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+.hero p {
+    margin:0 auto 25px;
+     max-width: 600px;
+    
+}
+.hero button {
+    background: white;
+    color: #123c69;
+    padding: 13px 24px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+/* Component 3: card Section */
+.tools {
+    padding: 40px 8%;
+
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+}
+.card h3 {
+    margin-bottom: 15px;
+    color:#2563eb;
+}
+.assistant {
+    background: #f3f4f6;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    max-width: 600px;
+}
+.assistant h2,
+.assistant > p {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.assistant textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+.assistant button {
+    background: #2563eb;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+}
+/* component 4: Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 8%;
+    margin-top: 40px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+    .hero h1 {
+        font-size: 32px;
+    }
+    nav {
+        justify-content: center;
+    }
+    nav-links a {
+        margin: 0 7px;
+    }
+    .assistant {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
